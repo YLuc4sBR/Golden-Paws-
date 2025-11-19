@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Paws Adotados</title>
+  <link rel="stylesheet" href="desing.css" />
+  <script src="LogicSite.js" defer></script>
+  <script src="Saude.js" defer></script>
+</head>
+
+<body>
+
+  <header class="box-header">
+    <img class="logo" src="/Trabalho/img/Logo.png" alt="Logo do site Golden Paws" />
+    <h1 class="titulo">Golden Paws</h1>
+    <button type="button" class="button-login" onclick="window.location.href= 'Login.html'">
+      <img src="/Trabalho/img/avatar.png" alt="Ícone de usuário" />
+    </button>
+</header>
+
+   <!-- menu desktop movido para abaixo do título -->
+  <section class="pc-menu">
+    <button type="button" onclick="window.location.href='Adote.html'">Adote</button>
+    <button type="button" onclick="window.location.href='Doar.html'">Doar</button>
+    <button type="button" onclick="window.location.href='Adotado.html'">Adotados</button>
+    <button type="button" class="login-btn-2" onclick="window.location.href='Login.html'">Login</button>
+    <button type="button" onclick="window.location.href='indexPet.html'">Pet Shop</button>
+    <button type="button" onclick="window.location.href='Saude.html'">Saúde</button>
+    <button type="button" onclick="window.location.href='Sobre.html'">Sobre</button>
+  </section>
+   
+  <!-- Overlay para escurecer a página quando menu mobile estiver aberto -->
+  <div id="overlay" onclick="MenuMenu()"></div>
+
+ 
+  <!-- Menu mobile -->
+  <section class="mob-menu">
+    <div class="mob-0">
+      <button type="button" class="menu-btn" onclick="MenuMenu()">Menu</button>
+      
+      <div class="mob-1" id="menuMob">
+        <h3>Menu</h3>
+        <button type="button" class="fechar-btn" onclick="MenuMenu()">Fechar</button>
+        <button type="button" onclick="window.location.href='Adote.html'">Adote</button>
+        <button type="button" onclick="window.location.href='Doar.html'">Doar</button>
+        <button type="button" onclick="window.location.href='Adotado.html'">Adotados</button>
+        <button type="button" class="login-btn-2" onclick="window.location.href='Login.html'">Login</button>
+        <button type="button" onclick="window.location.href='indexPet.html'">Pet Shop</button>
+        <button type="button" onclick="window.location.href='Saude.html'">Saúde</button>
+        <button type="button" onclick="window.location.href='Sobre.html'">Sobre</button>
+      </div>
+    </div>
+  </section>
+
+  
+  <main>
+  <div class="conteudo">
+          
+           <h2>Adotados</h2>
+          <section id="animaisAdotadosMenu3" aria-live="polite"></section> <!--Aqui vai os animais para serem adotados -->
+
+        </div>
+  </main>
+
+  
+  <footer>
+    <p>&copy; 2025 Golden Paws — Todos os direitos reservados.</p>
+  </footer>
+
+  
+
+</body>
+</html>

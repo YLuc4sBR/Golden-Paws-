@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="desing.css" />
+   <script src="LogicSite.js" defer></script>
+   <script src="Saude.js" defer></script>
+   <title>Golden Paws</title>
+ </head>
+ <body>
+   <header class="box-header">
+     <img class="logo" src="/Trabalho/img/Logo.png" alt="logo do site" />
+     <h1>Golden Paws</h1>
+     <button type="button" class="login-btn-1" onclick="trocarMenu(5)">Login</button>
+     
+   </header>
+   
+   <section class="pc-menu">
+     <button type="button" onclick="window.location.href='Adote.html'">Adote</button>
+     <button type="button" onclick="window.location.href='Doar.html'">Doar</button>
+     <button type="button" onclick="window.location.href='Adotado.html'">Adotados</button>
+     <button type="button" class="login-btn-2" onclick="window.location.href='Login.html'"><img src="/Trabalho/img/avatar.png" style="width: 50px"></button>
+     <button type="button" onclick="window.location.href='indexPet.html'">Pet Shop</button>
+     <button type="button" onclick="window.location.href='Saude.html'">Saúde</button>
+     <button type="button" onclick="window.location.href='Sobre.html'">Sobre</button>
+   </section>
+   
+   <!-- Overlay para escurecer a página quando menu mobile estiver aberto -->
+   <div id="overlay" onclick="MenuMenu()"></div>
+ 
+   <!-- Menu mobile -->
+   <section class="mob-menu">
+     <div class="mob-0">
+       <button type="button" class="menu-btn" onclick="MenuMenu()">Menu</button>
+       
+       <div class="mob-1" id="menuMob">
+         <h3>Menu</h3>
+         <button type="button" class="fechar-btn" onclick="MenuMenu()">Fechar</button>
+         <button type="button" onclick="window.location.href='Adote.html'">Adote</button>
+         <button type="button" onclick="window.location.href='Doar.html'">Doar</button>
+         <button type="button" onclick="window.location.href='Adotado.html'">Adotados</button>
+         <button type="button" class="login-btn-2" onclick="window.location.href='Login.html'"><img src="/Trabalho/img/avatar.png" style="width: 50px"></button>
+         <button type="button" onclick="window.location.href='indexPet.html'">Pet Shop</button>
+         <button type="button" onclick="window.location.href='Saude.html'">Saúde</button>
+         <button type="button" onclick="window.location.href='Sobre.html'">Sobre</button>
+       </div>
+     </div>
+   </section>
+   
+ <!-- Menu 6: Pet Shop -->
+ <nav class="menu" id="menu-6">
+     <h2 style="text-shadow: yellow 0px 0px 10px;">Pet Shop</h2>
+     <div class="petshop">
+   <div class="cabeca">Cabeça</div>
+   <div class="lado">Lado</div>
+   <div class="conteudo">Conteudo</div>
+   <div class="pe">Pe</div>
+ </div>
+     
+     <section class="card" data-id="">
+         <div class="card-media">
+           <img src="Animais LG/Gato 2.jpg" alt="Freedy - gato sereno" class="card-image" />
+         </div>
+         <div class="card-body">
+           <h3>Freedy (Gato)</h3>
+           <p class="card-info">
+             Freedy é manso e observador, chega devagar, observa e devolve carinho na hora certa.<br>
+             <strong>Sexo:</strong> Macho<br>
+             <strong>Vacinas:</strong> Leucemia Felina (FELV) e outras.<br>
+             <strong>Contato:</strong> contato@exemplo.com
+           </p>
+           <button type="button" class="adotado-btn" aria-label="Adotar Freedy">Adotar</button>
+           <button type="button" class="expand-btn" aria-expanded="false">Ver mais</button>
+         </div>
+       </section>
+     
+ </nav>     
+ </body>
+ </html>

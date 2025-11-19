@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desing.css">
+    <link rel="stylesheet" href="PetShopCSS.css
+    
+    ">
+    <title>Golden Paws Pet Shop</title>
+    
+</head>                           
+<body>
+<header class="box-header">
+    <img class="logo" src="/Trabalho/img/Logo.png" alt="Logo do site Golden Paws" />
+    <h1 class="titulo">Golden Paws</h1>
+    <button type="button" class="button-login" onclick="window.location.href= 'Login.html'">
+      <img src="/Trabalho/img/avatar.png" alt="Ícone de usuário" />
+    </button>
+</header>
+
+   <!-- menu desktop movido para abaixo do título -->
+  <section class="pc-menu">
+    <button type="button" onclick="window.location.href='Adote.html'">Adote</button>
+    <button type="button" onclick="window.location.href='Doar.html'">Doar</button>
+    <button type="button" onclick="window.location.href='Adotado.html'">Adotados</button>
+    <button type="button" class="login-btn-2" onclick="window.location.href='Login.html'">Login</button>
+    <button type="button" onclick="window.location.href='indexPet.html'">Pet Shop</button>
+    <button type="button" onclick="window.location.href='Saude.html'">Saúde</button>
+    <button type="button" onclick="window.location.href='Sobre.html'">Sobre</button>
+  </section>
+   
+  <!-- Overlay para escurecer a página quando menu mobile estiver aberto -->
+  <div id="overlay" onclick="MenuMenu()"></div>
+
+ 
+  <!-- Menu mobile -->
+  <section class="mob-menu">
+    <div class="mob-0">
+      <button type="button" class="menu-btn" onclick="MenuMenu()">Menu</button>
+      
+      <div class="mob-1" id="menuMob">
+        <h3>Menu</h3>
+        <button type="button" class="fechar-btn" onclick="MenuMenu()">Fechar</button>
+        <button type="button" onclick="window.location.href='Adote.html'">Adote</button>
+        <button type="button" onclick="window.location.href='Doar.html'">Doar</button>
+        <button type="button" onclick="window.location.href='Adotado.html'">Adotados</button>
+        <button type="button" class="login-btn-2" onclick="window.location.href='Login.html'">Login</button>
+        <button type="button" onclick="window.location.href='indexPet.html'">Pet Shop</button>
+        <button type="button" onclick="window.location.href='Saude.html'">Saúde</button>
+        <button type="button" onclick="window.location.href='Sobre.html'">Sobre</button>
+      </div>
+    </div>
+  </section>
+   <!-- Menu 6: Pet Shop -->
+<div class="container pai">
+
+    
+   <section class="carrossel">
+      <div class="carrossel-slides">
+        <div class="carrossel-item ativo">
+          <img src="/Images/petshop/cat1.jpg" alt="">
+          <div class="carrossel-legenda">
+            <h3>Ração Pedigree</h3>
+            <p>Nutrição completa e saudável para o seu melhor amigo 🐶</p>
+          </div>
+        </div>
+
+        
+        <div class="carrossel-item">
+          <img src="/Images/petshop/comer-racao-de-cachorro.jpg" alt="">
+          <div class="carrossel-legenda">
+            <h3>Ração Pedigree com proteína extra</h3>
+            <p>Feitos com ingredientes naturais — crocância irresistível 😋</p>
+          </div>
+        </div>
+
+        
+        <div class="carrossel-item">
+          <img src="/Images/petshop/dog-cat.jpg" alt="">
+          <div class="carrossel-legenda">
+            <h3>Ração Pedigree Light</h3>
+            <p>Alimento mais leve para seu animal🌿</p>
+      </div>
+    </div>
+        
+    <div class="carrps"></div>
+
+  </div>
+
+  <button class="carrossel-btn prev">&#10094;</button>
+  <button class="carrossel-btn next">&#10095;</button>
+    <div class="carrossel-dots"></div>
+  </section>
+</div>
+
+
+  <h2 class="titulo-racoes">Nossas Rações</h2>
+
+<div class="lista-racoes">
+        
+    <div class="racao"> 
+      <div class="img-racao">
+        <img src="/racoes/racaoGolden.jpg" alt="Zeel" class="card-image">
+        <div class="info-racao">
+          <h2>Ração Golden</h2>
+
+          <p>Tipo: Ração para cachorro 15Kg</p>
+          <p>Sabor frango e carne, para todas as idades.</p>
+                    
+          <div class="rodapé-info"> 
+            <p class="preco-racao">R$ 154,99</p>
+            <div class="botoes-racao">
+              <button class="btn-comprar">Comprar</button>
+              <button class="btn-carrinho">Carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="racao"> 
+      <div class="img-racao">
+        <img src="/racoes/racaoLight.jpg" alt="Zeel" class="card-image">
+        <div class="info-racao">
+          <h2>Ração Golden Light</h2>
+
+          <p>Tipo: Ração para cachorro 15Kg</p>
+          <p>Sabor frango e arroz, para todas as idades.</p>
+                    
+          <div class="rodapé-info"> 
+            <p class="preco-racao">R$ 58,90</p>
+            <div class="botoes-racao">
+              <button class="btn-comprar">Comprar</button>
+              <button class="btn-carrinho">Carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <div class="racao"> 
+      <div class="img-racao">
+        <img src="/racoes/racaoMega.jpg" alt="Zeel" class="card-image">
+        <div class="info-racao">
+          <h2>Ração Golden Mega</h2>
+
+          <p>Tipo: Ração cachorro 15Kg</p>
+        <p>Sabor frango, para uso de cão adulto ou raça grande.                                                 </p>
+                    
+          <div class="rodapé-info"> 
+            <p class="preco-racao">R$ 174,90</p>
+            <div class="botoes-racao">
+              <button class="btn-comprar">Comprar</button>
+              <button class="btn-carrinho">Carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="racao"> 
+      <div class="img-racao">
+        <img src="/racoes/racaoSpecial.jpg" alt="Zeel" class="card-image">
+        <div class="info-racao">
+          <h2>Ração Special</h2>
+
+          <p>Tipo: Ração para cachorro </p>
+          <p>Sabor carne, para todas as idades.</p>
+                    
+          <div class="rodapé-info"> 
+            <p class="preco-racao">R$ 119,90</p>
+            <div class="botoes-racao">
+              <button class="btn-comprar">Comprar</button>
+              <button class="btn-carrinho">Carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="racao"> 
+      <div class="img-racao">
+        <img src="/racoes/racaoWhiskas.jpg" alt="Zeel" class="card-image">
+        <div class="info-racao">
+          <h2>Ração Whiskas</h2>
+
+          <p>Tipo: Comprimidos</p>
+          <p>Uso Veterinário Heel-vet Redução da Dor Articular e Muscular Melhora da Mobilidade Condroregenerador</p>
+                    
+          <div class="rodapé-info"> 
+            <p class="preco-racao">R$ 179,97</p>
+            <div class="botoes-racao">
+              <button class="btn-comprar">Comprar</button>
+              <button class="btn-carrinho">Carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+  
+
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+      const slides = document.querySelectorAll('.carrossel-item');
+      const dotsContainer = document.querySelector('.carrossel-dots');
+      let indice = 0;
+        
+      // Cria os "pontinhos"
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.addEventListener('click', () => mudarSlide(i));
+        dotsContainer.appendChild(dot);
+      });
+    
+      const dots = dotsContainer.querySelectorAll('button');
+      dots[0].classList.add('ativo');
+    
+      function mudarSlide(novoIndice) {
+        slides[indice].classList.remove('ativo');
+        dots[indice].classList.remove('ativo');
+        indice = (novoIndice + slides.length) % slides.length;
+        slides[indice].classList.add('ativo');
+        dots[indice].classList.add('ativo');
+      }
+    
+      document.querySelector('.next').addEventListener('click', () => mudarSlide(indice + 1));
+      document.querySelector('.prev').addEventListener('click', () => mudarSlide(indice - 1));
+    
+      setInterval(() => mudarSlide(indice + 1), 6000);
+        
+        </script>
+    
+  </body>
+</html>

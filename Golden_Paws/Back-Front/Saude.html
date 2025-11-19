@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Paws Saúde</title>
+    <link rel="stylesheet" href="desing.css">
+    <link rel="stylesheet" href="SaudeCSS.css">
+    <script src="LogicSite.js" defer></script>
+</head>
+<body>
+    
+<header class="box-header">
+    <img class="logo" src="/Trabalho/img/Logo.png" alt="Logo do site Golden Paws" />
+    <h1 class="titulo">Golden Paws</h1>
+    <button type="button" class="button-login" onclick="window.location.href= 'Login.html'">
+      <img src="/Trabalho/img/avatar.png" alt="Ícone de usuário" />
+    </button>
+</header>
+
+  <section class="pc-menu">
+    <button type="button" onclick="window.location.href='Adote.html'">Adote</button>
+    <button type="button" onclick="window.location.href='Doar.html'">Doar</button>
+    <button type="button" onclick="window.location.href='Adotado.html'">Adotados</button>
+    <button type="button" class="login-btn-2" onclick="window.location.href='Login.html'">Login</button>
+    <button type="button" onclick="window.location.href='indexPet.html'">Pet Shop</button>
+    <button type="button" onclick="window.location.href='Saude.html'">Saúde</button>
+    <button type="button" onclick="window.location.href='Sobre.html'">Sobre</button>
+  </section>
+    
+  <div id="overlay" onclick="MenuMenu()"></div>
+
+  
+  <section class="mob-menu">
+    <div class="mob-0">
+      <button type="button" class="menu-btn" onclick="MenuMenu()">Menu</button>
+      
+      <div class="mob-1" id="menuMob">
+        <h3>Menu</h3>
+        <button type="button" class="fechar-btn" onclick="MenuMenu()">Fechar</button>
+        <button type="button" onclick="window.location.href='Adote.html'">Adote</button>
+        <button type="button" onclick="window.location.href='Doar.html'">Doar</button>
+        <button type="button" onclick="window.location.href='Adotado.html'">Adotados</button>
+        <button type="button" class="login-btn-2" onclick="window.location.href='Login.html'">Login</button>
+        <button type="button" onclick="window.location.href='indexPet.html'">Pet Shop</button>
+        <button type="button" onclick="window.location.href='Saude.html'">Saúde</button>
+        <button type="button" onclick="window.location.href='Sobre.html'">Sobre</button>
+      </div>
+    </div>
+  </section>
+
+<nav>
+    <h2 style="text-shadow: rgb(255, 227, 227) 0px 0px 50px; color: red;">Saúde</h2>
+
+    <section>
+        <label for="especie">Tipo de medicamento *</label>
+        <select>
+            <option value="">Selecione...</option>
+            <option value="Vacinas">Vacinas</option>
+            <option value="Comprimidos">Comprimidos</option>
+            <option value="Líquidos e pastas">Líquidos e pastas</option>
+            <option value="Medicamentos tópicos">Medicamentos tópicos</option>
+            <option value="Vermífugos">Vermífugos</option>
+            <option value="Antiparasitários">Antiparasitários</option>
+            <option value="Antimicrobianos e antibióticos">Antimicrobianos e antibióticos</option>
+            <option value="Analgésicos e anti-inflamatórios">Analgésicos e anti-inflamatórios</option>
+            <option value="doenças crônicas">Doenças crônicas</option>
+        </select>
+    </section>
+
+    <div class="lista-medicamentos">
+
+
+        <div class="medicamento"> 
+            <div class="img-medicamento">
+                <img src="/Medicamentos/Zeel.png" alt="Zeel" class="card-image">
+                <div class="info-medicamento">
+                    <h2>Zeel</h2>
+
+                    <p>Tipo: Comprimidos</p>
+                    <p>Uso Veterinário Heel-vet Redução da Dor Articular e Muscular Melhora da Mobilidade Condroregenerador</p>
+                    
+                    <div class="rodapé-info"> 
+                        <p class="preco-medicamento">R$ 179,97</p>
+                        <div class="botoes-medicamento">
+                            <button class="btn-comprar">Comprar</button>
+                            <button class="btn-carrinho">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+        <div class="medicamento"> 
+            <div class="img-medicamento">
+                <img src="/Medicamentos/Pasta.png" alt="Virbac C.E.T." class="card-image">
+                <div class="info-medicamento">
+                    <h2>Virbac C.E.T.</h2>
+
+                    <p>Tipo: Líquidos e pastas</p>
+                    <p>Kit Saúde Oral Limpeza e Manutenção da Higiene Oral para Cães e Gatos (pasta + escova + necessaire)</p>
+                    
+                    <div class="rodapé-info"> 
+                        <p class="preco-medicamento">R$ 179,97</p>
+                        <div class="botoes-medicamento">
+                            <button class="btn-comprar">Comprar</button>
+                            <button class="btn-carrinho">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="medicamento"> 
+            <div class="img-medicamento">
+                <img src="/Medicamentos/Elanco_Credeli.png" alt="Elanco Credeli" class="card-image">
+                <div class="info-medicamento">
+                    <h2>Elanco Credeli</h2>
+
+                    <p>Tipo: Antiparasitário</p>
+                    <p>Elanco Credeli Antipulgas e anticarrapatos para cães de 11kg a 22kg 450mg - 3 comprimidos</p>
+                    
+                    <div class="rodapé-info"> 
+                        <p class="preco-medicamento">R$ 158,99</p>
+                        <div class="botoes-medicamento">
+                            <button class="btn-comprar">Comprar</button>
+                            <button class="btn-carrinho">Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+</body>
+</html>

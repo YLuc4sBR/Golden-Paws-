@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Golden Paws - Adote</title>
+  <link rel="stylesheet" href="desing.css" />
+  <script src="LogicSite.js" defer></script>
+</head>
+<body>
+
+<header class="box-header">
+  <img class="logo" src="/Trabalho/img/Logo.png" alt="Logo do site Golden Paws" />
+  <h1 class="titulo">Golden Paws</h1>
+  <button type="button" class="button-login" onclick="window.location.href='Login.html'">
+    <img src="/Trabalho/img/avatar.png" alt="Ícone de usuário" />
+  </button>
+</header>
+
+<nav class="pc-menu" aria-label="Menu principal">
+  <button type="button" onclick="window.location.href='Adote.html'">Adote</button>
+  <button type="button" onclick="window.location.href='Doar.html'">Doar</button>
+  <button type="button" onclick="window.location.href='Adotado.html'">Adotados</button>
+  <button type="button" onclick="window.location.href='indexPet.html'">Pet Shop</button>
+  <button type="button" onclick="window.location.href='Saude.html'">Saúde</button>
+  <button type="button" onclick="window.location.href='Sobre.html'">Sobre</button>
+</nav>
+
+<div id="overlay" onclick="MenuMenu()"></div>
+
+<section class="mob-menu">
+  <div class="mob-0">
+    <button type="button" class="menu-btn" onclick="MenuMenu()">Menu</button>
+    <nav class="mob-1" id="menuMob" aria-label="Menu móvel">
+      <h3>Menu</h3>
+      <button type="button" class="fechar-btn" onclick="MenuMenu()">Fechar</button>
+      <button type="button" onclick="window.location.href='Adote.html'">Adote</button>
+      <button type="button" onclick="window.location.href='Doar.html'">Doar</button>
+      <button type="button" onclick="window.location.href='Adotado.html'">Adotados</button>
+      <button type="button" onclick="window.location.href='indexPet.html'">Pet Shop</button>
+      <button type="button" onclick="window.location.href='Saude.html'">Saúde</button>
+      <button type="button" onclick="window.location.href='Sobre.html'">Sobre</button>
+      <button type="button" onclick="window.location.href='Login.html'" aria-label="Login">
+        <img src="/Trabalho/img/avatar.png" alt="Ícone de usuário" style="width: 50px" />
+      </button>
+    </nav>
+  </div>
+</section>
+
+<main>
+  <h2>Adote um animal</h2>
+  
+  <!-- Container onde os animais disponíveis aparecerão -->
+  <section id="animaisDisponiveis" aria-live="polite"></section>
+
+  <!-- Placeholder quando não houver animais -->
+  <p id="placeholder-sem-animais" style="max-width:720px;margin:10px auto;color:#667;">
+    Nenhum animal disponível no momento. Deseja 
+    <button type="button" onclick="window.location.href='Doar.html'">Doar um animal?</button>
+  </p>
+</main>
+
+<!-- Pop-up modal para adoção -->
+<section id="formAdocao" class="modal">
+  <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="tituloAdocao">
+    <h2 id="tituloAdocao">Formulário de Adoção</h2>
+  <label for="nomeInteresse">Seu nome (obrigatório para confirmar adoção):</label>
+  <input type="text" id="nomeInteresse" name="nomeInteresse" required placeholder="Seu nome completo" />
+    <div class="modal-buttons">
+  <button id="confirmarAdocaoBtn" type="button">Confirmar Adoção</button>
+      <button id="cancelarAdocaoBtn" type="button">Cancelar</button>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

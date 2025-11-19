@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Paws Doar</title>
+  <link rel="stylesheet" href="desing.css">
+  <script src="LogicSite.js" defer></script>
+</head>
+<body>
+  
+  <header class="box-header">
+    <img class="logo" src="/Trabalho/img/Logo.png" alt="Logo do site Golden Paws" />
+    <h1 class="titulo">Golden Paws</h1>
+    <button type="button" class="button-login" onclick="window.location.href='Login.html'">
+      <img src="/Trabalho/img/avatar.png" alt="Ícone de usuário" />
+    </button>
+  </header>
+
+  <!-- Menu desktop -->
+  <section class="pc-menu">
+    <button type="button" onclick="window.location.href='Adote.html'">Adote</button>
+    <button type="button" onclick="window.location.href='Doar.html'">Doar</button>
+    <button type="button" onclick="window.location.href='Adotado.html'">Adotados</button>
+    <button type="button" class="login-btn-2" onclick="window.location.href='Login.html'">Login</button>
+    <button type="button" onclick="window.location.href='indexPet.html'">Pet Shop</button>
+    <button type="button" onclick="window.location.href='Saude.html'">Saúde</button>
+    <button type="button" onclick="window.location.href='Sobre.html'">Sobre</button>
+  </section>
+
+  <!-- Overlay -->
+  <div id="overlay" onclick="MenuMenu()"></div>
+
+  <!-- Menu mobile -->
+  <section class="mob-menu">
+    <div class="mob-0">
+      <button type="button" class="menu-btn" onclick="MenuMenu()">Menu</button>
+      <div class="mob-1" id="menuMob">
+        <h3>Menu</h3>
+        <button type="button" class="fechar-btn" onclick="MenuMenu()">Fechar</button>
+        <button type="button" onclick="window.location.href='Adote.html'">Adote</button>
+        <button type="button" onclick="window.location.href='Doar.html'">Doar</button>
+        <button type="button" onclick="window.location.href='Adotado.html'">Adotados</button>
+        <button type="button" class="login-btn-2" onclick="window.location.href='Login.html'">Login</button>
+        <button type="button" onclick="window.location.href='indexPet.html'">Pet Shop</button>
+        <button type="button" onclick="window.location.href='Saude.html'">Saúde</button>
+        <button type="button" onclick="window.location.href='Sobre.html'">Sobre</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulário de Doação -->
+  <section class="menu formulario-doacao-container ativo" id="menu-2">
+    <h2>Doe um Animal</h2>
+    <p>Preencha o formulário abaixo para disponibilizar um animal para adoção em nossa plataforma. Por favor, forneça informações e fotos precisas.</p>
+
+    <form id="formDoacao" class="form-container">
+
+      <div class="form-grupo">
+        <label for="inputFile">Foto do Animal *</label>
+        <input type="file" id="inputFile" accept="image/*" required>
+        <img id="imagemPreview" src="" alt="Pré-visualização da Imagem" class="card-image card">
+      </div>
+
+      <div class="form-grupo">
+        <label for="nomeAnimal">Nome do Animal *</label>
+        <input type="text" id="nomeAnimal" required maxlength="50" placeholder="Ex: Rex ou Mel">
+      </div>
+
+      <div class="form-grupo">
+        <label for="especie">Espécie *</label>
+        <select id="especie" required>
+          <option value="">Selecione...</option>
+          <option value="Aves">Ave</option>
+          <option value="Roedores">Roedor</option>
+          <option value="Coelhos">Coelho</option>
+          <option value="Repteis">Réptil</option>
+          <option value="Ferret">Ferret</option>
+          <option value="Fazenda">Animal de Fazenda</option>
+          <option value="Primatas">Primata</option>
+          <option value="Anfibios">Anfíbio</option>
+          <option value="Peixes">Peixe</option>
+          <option value="Caes">Cachorro</option>
+          <option value="Gatos">Gato</option>
+          <option value="Outros">Outros</option>
+        </select>
+      </div>
+
+      <div class="form-grupo">
+        <label for="sexoAnimal">Sexo</label>
+        <select id="sexoAnimal">
+          <option value="Indefinido">Indefinido</option>
+          <option value="Macho">Macho</option>
+          <option value="Fêmea">Fêmea</option>
+        </select>
+      </div>
+
+<fieldset>
+  <legend>Vacinas Recebidas</legend>
+
+  <!-- AVES -->
+  <div id="Aves">
+    <div class="vacina-item"><input type="checkbox" value="Newcastle"><label>Newcastle (Aves)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Bronquite Infecciosa"><label>Bronquite Infecciosa (Aves)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Gumboro"><label>Gumboro (Aves)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Encefalomielite Aviária"><label>Encefalomielite Aviária (Aves)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Marek"><label>Marek (Aves)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Coccidiose"><label>Coccidiose (Aves)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Laringotraqueíte"><label>Laringotraqueíte (Aves)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Varíola Aviária"><label>Varíola Aviária (Aves)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Outras Vacinas"><label>Outras Vacinas</label></div>
+  </div>
+
+  <!-- ROEDORES -->
+  <div id="Roedores">
+    <div class="vacina-item"><input type="checkbox" value="Tifo Murino"><label>Tifo Murino (Roedores)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Leptospirose"><label>Leptospirose (Roedores)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Salmonelose"><label>Salmonelose (Roedores)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Peste dos Roedores"><label>Peste dos Roedores</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Tularemia"><label>Tularemia</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Hantavirose"><label>Hantavirose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Listeriose"><label>Listeriose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Ectoparasitos"><label>Controle de Ectoparasitos</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Outras Vacinas"><label>Outras Vacinas</label></div>
+  </div>
+
+  <!-- COELHOS -->
+  <div id="Coelhos">
+    <div class="vacina-item"><input type="checkbox" value="Mixomatose"><label>Mixomatose (Coelhos)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Doença Hemorrágica Viral"><label>DHV (Coelhos)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Pasteurelose"><label>Pasteurelose (Coelhos)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Clostridiose"><label>Clostridiose (Coelhos)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Encefalitozoonose"><label>Encefalitozoonose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Coccidiose"><label>Coccidiose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Dermatofitose"><label>Dermatofitose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Toxoplasmose"><label>Toxoplasmose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Outras Vacinas"><label>Outras Vacinas</label></div>
+  </div>
+
+  <!-- RÉPTEIS -->
+  <div id="Repteis">
+    <div class="vacina-item"><input type="checkbox" value="Paramixovirose"><label>Paramixovirose (Répteis)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Herpesvírus"><label>Herpesvírus (Répteis)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Ranavirose"><label>Ranavirose (Répteis)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Salmonelose"><label>Salmonelose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Micoplasmose"><label>Micoplasmose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Criptosporidiose"><label>Criptosporidiose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Iridovirose"><label>Iridovirose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Dermatite Bacteriana"><label>Dermatite Bacteriana</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Outras Vacinas"><label>Outras Vacinas</label></div>
+  </div>
+
+  <!-- FERRET -->
+  <div id="Ferret">
+    <div class="vacina-item"><input type="checkbox" value="Cinomose"><label>Cinomose (Ferret)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Raiva"><label>Raiva (Ferret)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Influenza"><label>Influenza (Ferret)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Parvovirose"><label>Parvovirose (Ferret)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Leptospirose"><label>Leptospirose (Ferret)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Adenovirose"><label>Adenovirose (Ferret)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Coronavirus"><label>Coronavirus (Ferret)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Toxoplasmose"><label>Toxoplasmose (Ferret)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Outras Vacinas"><label>Outras Vacinas</label></div>
+  </div>
+
+  <!-- FAZENDA -->
+  <div id="Fazenda">
+    <div class="vacina-item"><input type="checkbox" value="Aftosa"><label>Aftosa (Fazenda)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Brucelose"><label>Brucelose (Fazenda)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Carbúnculo Sintomático"><label>Carbúnculo Sintomático</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Botulismo"><label>Botulismo</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Raiva"><label>Raiva (Bovinos/Ovinos)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Leptospirose"><label>Leptospirose (Fazenda)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Clostridiose"><label>Clostridiose (Fazenda)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Mastite"><label>Mastite</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Outras Vacinas"><label>Outras Vacinas</label></div>
+  </div>
+
+  <!-- PRIMATAS -->
+  <div id="Primatas">
+    <div class="vacina-item"><input type="checkbox" value="Sarampo"><label>Sarampo (Primatas)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Tétano"><label>Tétano (Primatas)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Hepatite A"><label>Hepatite A</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Hepatite B"><label>Hepatite B</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Influenza"><label>Influenza</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Poliomielite"><label>Poliomielite</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Tuberculose"><label>Tuberculose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Varíola"><label>Varíola</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Outras Vacinas"><label>Outras Vacinas</label></div>
+  </div>
+
+  <!-- ANFÍBIOS -->
+  <div id="Anfibios">
+    <div class="vacina-item"><input type="checkbox" value="Ranavirose"><label>Ranavirose (Anfíbios)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Chytridiomicose"><label>Chytridiomicose (Anfíbios)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Aeromonas"><label>Aeromonas (Anfíbios)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Saprolegniose"><label>Saprolegniose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Pseudomonose"><label>Pseudomonose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Iridovirose"><label>Iridovirose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Micose Cutânea"><label>Micose Cutânea</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Dermatite Bacteriana"><label>Dermatite Bacteriana</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Outras Vacinas"><label>Outras Vacinas</label></div>
+  </div>
+
+  <!-- PEIXES -->
+  <div id="Peixes">
+    <div class="vacina-item"><input type="checkbox" value="Vibriosis"><label>Vibriosis (Peixes)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Streptococose"><label>Streptococose (Peixes)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Aeromonose"><label>Aeromonose (Peixes)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Columnariose"><label>Columnariose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Piscirickettsiose"><label>Piscirickettsiose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Tenacibaculose"><label>Tenacibaculose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Franciselose"><label>Franciselose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Linfocistose"><label>Linfocistose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Outras Vacinas"><label>Outras Vacinas</label></div>
+  </div>
+
+  <!-- CÃES -->
+  <div id="Caes">
+    <div class="vacina-item"><input type="checkbox" value="V8/V10"><label>V8/V10 (Cães)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Antirrábica"><label>Antirrábica (Cães)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Gripe Canina"><label>Gripe Canina (Cães)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Giardíase"><label>Giardíase</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Leishmaniose"><label>Leishmaniose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Tosse dos Canis"><label>Tosse dos Canis</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Hepatite Infecciosa"><label>Hepatite Infecciosa</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Parainfluenza"><label>Parainfluenza</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Outras Vacinas"><label>Outras Vacinas</label></div>
+  </div>
+
+  <!-- GATOS -->
+  <div id="Gatos">
+    <div class="vacina-item"><input type="checkbox" value="Tríplice Viral"><label>Tríplice Viral (Gatos)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="FeLV"><label>Leucemia Felina (FeLV)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Antirrábica Felina"><label>Antirrábica (Gatos)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Clamidiose"><label>Clamidiose (Gatos) </label></div>
+    <div class="vacina-item"><input type="checkbox" value="Bordetelose"><label>Bordetelose (Gatos)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Calicivirose"><label>Calicivirose (Gatos)</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Panleucopenia"><label>Panleucopenia Felina</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Dermatofitose"><label>Dermatofitose</label></div>
+    <div class="vacina-item"><input type="checkbox" value="Outras Vacinas"><label>Outras Vacinas</label></div>
+  </div>
+
+  <!-- OUTROS -->
+  <div id="Outros">
+    <div class="vacina-item"><input type="checkbox" value="Outras"><label>Outras Vacinas</label></div>
+  </div>
+</fieldset>
+
+
+      <div class="form-grupo">
+        <label for="descricaoAnimal">Fale um pouco sobre o animal *</label>
+        <textarea id="descricaoAnimal" rows="4" required maxlength="500" placeholder="Temperamento, idade, saúde, etc."></textarea>
+      </div>
+
+      <div class="form-grupo">
+        <label for="emailContato">Seu Email de Contato *</label>
+        <input type="email" id="emailContato" required maxlength="100" placeholder="Seu email para contato">
+      </div>
+
+      <button type="submit" class="btn-doar">Cadastrar Animal para Adoção</button>
+    </form>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const selectEspecie = document.getElementById('especie');
+      const gruposVacinas = document.querySelectorAll(
+        '#Aves, #Roedores, #Coelhos, #Repteis, #Ferret, #Fazenda, #Primatas, #Anfibios, #Peixes, #Caes, #Gatos, #Outros'
+      );
+
+      // Oculta todos os grupos ao carregar
+      gruposVacinas.forEach(div => div.style.display = 'none');
+
+      // Exibe o grupo de vacinas conforme a espécie escolhida
+      selectEspecie.addEventListener('change', function() {
+        const especieSelecionada = this.value;
+        gruposVacinas.forEach(div => div.style.display = 'none');
+        if (especieSelecionada) {
+          const grupo = document.getElementById(especieSelecionada);
+          if (grupo) grupo.style.display = 'block';
+        }
+      });
+
+      // Pré-visualização da imagem
+      const inputFile = document.getElementById('inputFile');
+      const imagemPreview = document.getElementById('imagemPreview');
+      inputFile.addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = e => imagemPreview.src = e.target.result;
+          reader.readAsDataURL(file);
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
